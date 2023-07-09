@@ -1,6 +1,4 @@
 
-
-// Chakra imports
 import {
   Avatar,
   Box,
@@ -24,19 +22,19 @@ import {
   MdBarChart,
   MdFileCopy,
 } from "react-icons/md";
-import CheckTable from "views/admin/default/components/CheckTable";
-import ComplexTable from "views/admin/default/components/ComplexTable";
-import DailyTraffic from "views/admin/default/components/DailyTraffic";
-import PieCard from "views/admin/default/components/PieCard";
-import Tasks from "views/admin/default/components/Tasks";
-import TotalSpent from "views/admin/default/components/TotalSpent";
-import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
+import CheckTable from "views/user/default/components/CheckTable";
+import ComplexTable from "views/user/default/components/ComplexTable";
+import DailyTraffic from "views/user/default/components/DailyTraffic";
+import PieCard from "views/user/default/components/PieCard";
+import Tasks from "views/user/default/components/Tasks";
+import TotalSpent from "views/user/default/components/TotalSpent";
+import WeeklyRevenue from "views/user/default/components/WeeklyRevenue";
 import {
   columnsDataCheck,
   columnsDataComplex,
-} from "views/admin/default/variables/columnsData";
-import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
-import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
+} from "views/user/default/variables/columnsData";
+import tableDataCheck from "views/user/default/variables/tableDataCheck.json";
+import tableDataComplex from "views/user/default/variables/tableDataComplex.json";
 
 export default function UserReports() {
   // Chakra Color Mode

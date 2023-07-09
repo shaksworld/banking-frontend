@@ -1,5 +1,5 @@
 // Chakra imports
-import { Portal, Box, useDisclosure, Text, Button, Link } from '@chakra-ui/react';
+import {Portal, Box, Text, Button, Link, useDisclosure} from '@chakra-ui/react';
 import Footer from 'components/footer/FooterAdmin.js';
 // Layout components
 import Navbar from 'components/navbar/NavbarAdmin.js';
@@ -140,7 +140,7 @@ export default function Dashboard(props) {
 							<Box mx='auto' p={{ base: '20px', md: '30px' }} pe='20px' minH='100vh' pt='50px'>
 								<Switch>
 									{getRoutes(routes)}
-									<Redirect from='/' to='/admin/default' />
+									<Redirect from='/' to='/dashboard' />
 								</Switch>
 							</Box>
 						) : null}

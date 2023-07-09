@@ -1,4 +1,6 @@
 
+
+// Chakra imports
 import {
   Avatar,
   Box,
@@ -22,19 +24,19 @@ import {
   MdBarChart,
   MdFileCopy,
 } from "react-icons/md";
-import CheckTable from "views/admin/default/components/CheckTable";
-import ComplexTable from "views/admin/default/components/ComplexTable";
-import DailyTraffic from "views/admin/default/components/DailyTraffic";
-import PieCard from "views/admin/default/components/PieCard";
-import Tasks from "views/admin/default/components/Tasks";
-import TotalSpent from "views/admin/default/components/TotalSpent";
-import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
+import CheckTable from "views/user/default/components/CheckTable";
+import ComplexTable from "views/user/default/components/ComplexTable";
+import DailyTraffic from "views/user/default/components/DailyTraffic";
+import PieCard from "views/user/default/components/PieCard";
+import Tasks from "views/user/default/components/Tasks";
+import TotalSpent from "views/user/default/components/TotalSpent";
+import WeeklyRevenue from "views/user/default/components/WeeklyRevenue";
 import {
   columnsDataCheck,
   columnsDataComplex,
-} from "views/admin/default/variables/columnsData";
-import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
-import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
+} from "views/user/default/variables/columnsData";
+import tableDataCheck from "views/user/default/variables/tableDataCheck.json";
+import tableDataComplex from "views/user/default/variables/tableDataComplex.json";
 
 export default function UserReports() {
   // Chakra Color Mode
@@ -96,32 +98,32 @@ export default function UserReports() {
           name='Your balance'
           value='$1,000'
         />
-        <MiniStatistics
-          startContent={
-            <IconBox
-              w='56px'
-              h='56px'
-              bg='linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)'
-              icon={<Icon w='28px' h='28px' as={MdAddTask} color='white' />}
-            />
-          }
-          name='New Tasks'
-          value='154'
-        />
-        <MiniStatistics
-          startContent={
-            <IconBox
-              w='56px'
-              h='56px'
-              bg={boxBg}
-              icon={
-                <Icon w='32px' h='32px' as={MdFileCopy} color={brandColor} />
-              }
-            />
-          }
-          name='Total Projects'
-          value='2935'
-        />
+        {/*<MiniStatistics*/}
+        {/*  startContent={*/}
+        {/*    <IconBox*/}
+        {/*      w='56px'*/}
+        {/*      h='56px'*/}
+        {/*      bg='linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)'*/}
+        {/*      icon={<Icon w='28px' h='28px' as={MdAddTask} color='white' />}*/}
+        {/*    />*/}
+        {/*  }*/}
+        {/*  name='New Tasks'*/}
+        {/*  value='154'*/}
+        {/*/>*/}
+        {/*<MiniStatistics*/}
+        {/*  startContent={*/}
+        {/*    <IconBox*/}
+        {/*      w='56px'*/}
+        {/*      h='56px'*/}
+        {/*      bg={boxBg}*/}
+        {/*      icon={*/}
+        {/*        <Icon w='32px' h='32px' as={MdFileCopy} color={brandColor} />*/}
+        {/*      }*/}
+        {/*    />*/}
+        {/*  }*/}
+        {/*  name='Total Projects'*/}
+        {/*  value='2935'*/}
+        {/*/>*/}
       </SimpleGrid>
 
       <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px'>

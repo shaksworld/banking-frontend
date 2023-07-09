@@ -10,13 +10,13 @@ import {
 } from "react-icons/md";
 
 // Admin Imports
-import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
-import Profile from "views/admin/profile";
-import DataTables from "views/admin/dataTables";
-import Deposit from "views/admin/deposit"
-import Transaction from "views/admin/transaction"
-import Loan from "views/admin/loan"
+import MainDashboard from "views/user/default";
+import NFTMarketplace from "views/user/marketplace";
+import Profile from "views/user/profile";
+import DataTables from "views/user/dataTables";
+import Deposit from "views/user/deposit"
+import Transaction from "views/user/transaction"
+import Loan from "views/user/loan"
 // import RTL from "views/admin/rtl";
 
 // Auth Imports
