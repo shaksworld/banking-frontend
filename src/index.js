@@ -7,6 +7,13 @@ import AdminLayout from 'layouts/user';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from 'theme/theme';
 import { ThemeEditorProvider } from '@hypertheme-editor/chakra-ui';
+import './styles/global.css';
+
+import Home from './pages/index';
+import CryptoCurrencyPage from './pages/CryptoCurrencyPage';
+import Error404 from "./pages/Error404";
+import Error500 from "./pages/Error500";
+// import Error404 from './pages/Error404';
 
 // PrivateRoute component for private routes
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -31,6 +38,7 @@ const PublicRoute = ({ component: Component, ...rest }) => (
 	/>
 );
 
+
 ReactDOM.render(
 	<ChakraProvider theme={theme}>
 		<React.StrictMode>
@@ -40,7 +48,11 @@ ReactDOM.render(
 						<PublicRoute path="/auth" component={AuthLayout} />
 						<PublicRoute path="/home" component={Home} />
 						<PublicRoute path="/admin" component={AdminLayout} />
+						<PublicRoute path="/cryptocurrency" component={CryptoCurrencyPage} />
+						<PublicRoute path="/errorPage" component={Error404} />
+						<PublicRoute path="/pageLost" component={Error500} />
 						<Redirect from="/" to="/home" />
+
 					</Switch>
 				</HashRouter>
 			</ThemeEditorProvider>
@@ -48,9 +60,3 @@ ReactDOM.render(
 	</ChakraProvider>,
 	document.getElementById('root')
 );
-
-// Example component for public route
-function Home() {
-	return <h2>Home</h2>;
-}
-
